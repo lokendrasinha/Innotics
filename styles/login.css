@@ -1,0 +1,335 @@
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e6ebfc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  ;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0c0c3e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #8b5cf6;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Main Content Styles */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Left Side Styles */
+.left-side {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .left-side {
+    text-align: left;
+  }
+}
+
+.pixel-font {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.main-heading {
+  font-size: 24px;
+  color: #0c0c3e;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.sub-heading {
+  font-size: 48px;
+  color: #0c0c3e;
+  line-height: 1.2;
+  letter-spacing:15px;
+}
+
+@media (min-width: 1024px) {
+  .main-heading {
+    font-size: 32px;
+  }
+  
+  .sub-heading {
+    font-size: 64px;
+  }
+}
+
+/* Right Side Styles */
+.right-side {
+  position: relative;
+  background-color: #BFCEFA;
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding: 40px;
+  width: 100%;
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.character-image {
+  position: absolute;
+  top: 185px;
+  left: -290px;
+  bottom: 0;
+  width: 350px;
+  pointer-events: none;
+  display: none;
+
+
+
+}
+
+@media (min-width: 1024px) {
+  .character-image {
+    display: block;
+  }
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #1c1c1c;
+  margin-bottom: 24px;
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 32px;
+  background-color: white;
+  font-size: 13px;
+  font-weight: 100;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  background-color: #ede9fe; /* Light purple tint matching theme */
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3); /* Purple glow effect */
+  transform: translateY(-2px) scale(1.02); /* Slight lift effect */
+  transition: all 0.3s ease;
+}
+
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #1c1c1c;
+  margin-bottom: 4px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px 0; /* Changed from padding on all sides to just top/bottom */
+  border: none; /* Removed all borders */
+  border-bottom: 2px solid #BDBDBD; /* Bottom border only with purple color */
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: transparent; /* Remove default background */
+  border-radius: 0; /* Remove any border radius */
+  margin-bottom: 8px; /* Add some space between inputs */
+}
+
+.form-input:focus {
+  border-bottom: 2px solid #6d28d9; /* Darker purple on focus */
+  box-shadow: none; /* Remove the focus shadow */
+}
+
+/* Optional: Add placeholder styling to match the design */
+.form-input::placeholder {
+  color: #9ca3af; /* Lighter placeholder text */
+  opacity: 1; /* Ensure full opacity */
+}
+
+.form-input:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+.remember-me {
+  .remember-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+  
+
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+.remember-me label {
+  font-size: 0.875rem;
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+#remember {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #a78bfa; /* light purple border */
+  border-radius: 0.25rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#remember:checked {
+  background-color: #8b5cf6; /* fill with purple */
+  border-color: #8b5cf6;
+  vertical-align: middle;
+}
+
+#remember:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.login-btn {
+  width: 25%;
+  padding: 16px 16px;
+  background-color: #8b5cf6;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #7c3aed;
+}
+
+.register-link {
+  margin-top: 24px;
+  font-size: 14px;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.register-link a {
+  font-weight: 700;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.login_remember {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: center;
+    gap: 40px; /* This adds space between the checkbox and the button */
+    
+}
+
+
+
+/* Or if you want space specifically above the login button */
+.login_remember + .login-btn {
+    margin-top: 16px;
+}
+
