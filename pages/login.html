@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="#">Stories</a>
+      <a href="#">Projects</a>
+      <a href="#">Kits</a>
+      <a href="#">Videos</a>
+      <a href="#">About US</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="images/mdi_github.svg" alt="GitHub"></a>
+      <a href="#"><img src="images/mdi_discord.svg" alt="Discord"></a>
+      <a href="#"><img src="images/mdi_reddit.svg" alt="Reddit"></a>
+      <a href="#"><img src="images/mdi_twitter.svg" alt="Twitter"></a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="content-grid">
+      <!-- Left Side -->
+      <div class="left-side">
+        <h1 class="pixel-font main-heading">
+          ARE YOU READY TO<br> THINK LIKE AN
+        </h1>
+        <h1 class="pixel-font sub-heading">
+          INN<br>OVA<br>TOR
+        </h1>
+      </div>
+
+      <!-- Right Side -->
+      <div class="right-side">
+        <!-- Image -->
+        <img src="images/20286066_6207965 1.png" alt="Character" class="character-image">
+
+        <h2 class="login-title">Login</h2>
+
+        <div class="social-buttons">
+          <button class="social-btn google-btn">
+            <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="social-icon">
+            Log In with Google
+          </button>
+          <button class="social-btn github-btn">
+            <img src="images/mdi_github.svg" class="social-icon">
+            Log In with Github
+          </button>
+        </div>
+
+        <!-- Form -->
+        <form class="login-form">
+          <div class="form-group">
+            <label>Email or Use</label>
+            <input type="text" placeholder="Username" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="*********" class="form-input">
+          </div>
+          <div class="login_remember">
+            <div class="remember-me">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="login-btn">LOG IN</button>
+          </div>
+        </form>
+
+        <p class="register-link">
+          No Account yet? <a href="#">REGISTER</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
